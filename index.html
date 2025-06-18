@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Nilkanth | Java Full Stack Developer</title>
+    <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="style.css"  />
+    
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="container nav-container">
+        <div class="nav-logo">Yash Nilkanth</div>
+        <i class="fas fa-bars hamburger" onclick="toggleMenu()"></i>
+        <div class="nav-links" id="navLinks">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Hi, I'm <span>Yash Nilkanth</span></h1>
+        <p>Java Full Stack Developer specializing in responsive web applications with React, Spring Boot, HTML/CSS, and JavaScript.</p>
+        <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Contact Me</button>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="sub-title">About Me</h2>
+        <div class="row">
+          <div class="about-img">
+            <img src="images/1000129513.jpg" alt="Yash Nilkanth" />
+          </div>
+          <div class="about-content">
+            <p>I am a dedicated and passionate Java Full Stack Developer with a Master's in Computer Applications. I enjoy creating efficient, scalable web applications and learning new technologies to solve real-world problems.</p>
+            <p>My strengths include problem-solving, quick learning, and collaboration in team environments. I aim to build user-friendly experiences and robust backend systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="sub-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item"><i class="fab fa-java"></i><p>Java</p></div>
+          <div class="skill-item"><i class="fas fa-code-branch"></i><p>Spring Boot</p></div>
+          <div class="skill-item"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
+          <div class="skill-item"><i class="fab fa-react"></i><p>ReactJS</p></div>
+          <div class="skill-item"><i class="fab fa-html5"></i><p>HTML5</p></div>
+          <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
+        </div>
+      </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container">
+        <h2 class="sub-title">Education</h2>
+        <div class="education-list">
+          <div class="education-item">
+            <h3>MCA - Masters in Computer Applications</h3>
+            <p>Dr. Babasaheb Ambedkar Marathwada University, 2024</p>
+          </div>
+          <div class="education-item">
+            <h3>BCA - Bachelor in Computer Applications</h3>
+            <p>Dr. Babasaheb Ambedkar Marathwada University, 2022</p>
+          </div>
+          <div class="education-item">
+            <h3>12th Board</h3>
+            <p>J.E.S. College, Jalna, 2018</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="sub-title">Projects</h2>
+        <div class="work-list">
+          <div class="project-item">
+            <img src="images/work-1.png" alt="Face Mask Detection" />
+            <div class="project-overlay">
+              <h4>Face Mask Detection</h4>
+              <p>An AI-based system to detect mask usage using OpenCV and Java backend integration.</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="images/work-2.png" alt="Movie Recommendation" />
+            <div class="project-overlay">
+              <h4>Movie Recommendation System</h4>
+              <p>A machine learning based recommender integrated into a Spring Boot API.</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="images/work-3.png" alt="Portfolio Website" />
+            <div class="project-overlay">
+              <h4>Personal Portfolio Website</h4>
+              <p>Responsive portfolio built with HTML, CSS, and JavaScript to showcase skills and projects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="sub-title">Contact Me</h2>
+        <div class="row">
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> yashnilkanth773@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 7420981871</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/yash-nilkanth-5832a9286/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/YashNilkanth" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form action="https://script.google.com/macros/s/AKfycbzmLHRjMJypl0vC9lshVwf41P7WFVWjwtfuryUFBIOK-p77pj3fqdjH97Drx6uqiT9U/exec" method="POST" target="hidden_iframe" onsubmit="submitted=true">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Yash Nilkanth. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- JavaScript for mobile menu -->
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('open');
+      }
+      // Highlight active link on scroll
+      const sections = document.querySelectorAll('section');
+      const navItems = document.querySelectorAll('.nav-links a');
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 80;
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href') === '#' + current) {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      var submitted = false;
+    document.querySelector("form").addEventListener("submit", function () {
+      if (!submitted) return;
+      alert("✅ Submitted! We'll contact you shortly.");
+    });
+  </script>
+    </script>
+  </body>
+</html>
